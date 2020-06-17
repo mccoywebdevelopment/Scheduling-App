@@ -1,0 +1,95 @@
+html, body, #app, #app>div {
+  height: 100%;
+}
+
+body{
+  background-color: transparent;
+}
+
+.btn-primary{
+  background-color: #CB0806!important;
+  border-color:#CB0806!important;
+}
+
+.btn-primary:active{
+  border-color: #CB0806!important;
+}
+.btn-primary:focus{
+  box-shadow: 0 0 0 0.2rem #CB0806!important;
+}
+.btn-outline-primary{
+  color:#CB0806!important;
+  border-color:#CB0806!important;
+}
+.btn-outline-primary:hover{
+  background-color: #CB0806!important;
+  color:white!important;
+}
+.btn-outline-primary:active{
+  border-color: #CB0806!important;
+}
+.btn-outline-primary:focus{
+  box-shadow: 0 0 0 0.2rem #CB0806!important;
+}
+label{
+  font-size: x-large!important;
+}
+input{
+  font-size: x-large!important;
+}
+.form-row{
+  margin-top: 20px;
+}
+/* .day{
+  height: 30px;
+  padding:5px;
+}
+.calendar{
+  grid-template-rows: 0px;
+  grid-auto-rows:60px!important;
+  overflow: hidden;
+}
+.day2:hover{
+  font-size: medium;
+  font-weight: 400;
+  color:black; 
+}
+.calendar-container{
+  width:80%;
+} */
+.availible-spot:hover{
+  text-decoration: underline;
+}
+.my-card{
+  height: 100%;
+  width: 100%;
+  border-width:3px;
+  border-style: solid;
+  border-color:transparent;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  cursor:pointer;
+}
+.my-card-selected{
+  height: 100%;
+  width: 100%;
+  border-width:3px;
+  border-color:#CB0806;
+  border-style:solid;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  cursor:pointer;
+}
+.my-card-disabled{
+  height: 100%;
+  width: 100%;
+  border-width:3px;
+  border-color:transparent;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  cursor: not-allowed;
+  opacity: 0.5;
+}

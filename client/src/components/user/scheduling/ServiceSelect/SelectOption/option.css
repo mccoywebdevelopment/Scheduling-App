@@ -1,0 +1,7 @@
+.card-option:hover{
+    transform: scale(1.02, 1.02);
+    cursor: pointer;
+}
+.invert-img{
+    filter: "invert(1)"
+}

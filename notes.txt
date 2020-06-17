@@ -1,0 +1,77 @@
+NOTES:
+========================================================================================================
+1. How to secure routes when given only address/phoneNumber
+    --secure with session base token
+    --phone auth
+2. Why do we need a seperate database 
+    --store customer data
+    --confirmation
+    --additional intregrations(phone reminder ect)
+3. How do we insure that customer will remain the same when updating
+    --transfer each field manually
+    --set the id to the same so it will saved in other intregrations
+    --backup customer data to ensure there is no data loss and transparency
+6. How to authenticate user(s)?
+    --twilio
+========================================================================================================
+Create Appt
+4. pick spot based on location lat lng (disatance)
+
+5. Need to schedule multiple if mulitple subscriptions(only new)
+
+For each create Appt (given serviceType)
+create appt(s)
+========================================================================================================
+NOTES:
+Dont edit/delete subscriptions
+Dont edit/cancel appt (only if feature enbable)
+========================================================================================================
+ERRORS/OPTIMIZATIONS:
+**form validation for existing user
+**schedule view on load the button is on the middle of the screen.
+**schedule view will go through old subscriptions and new
+========================================================================================================
+TODO:
+1. Submit app route
+2. Check update
+========================================================================================================
+PLAN:
+1. existing
+	If existing ask if they want to add subscription and/or create appt
+2. select subscription
+3. select appt
+4. pay
+	enter card info(one time payment)
+	Then subscribe to subscription
+	USE JWT To Keep Track of updated info(subscriptions)
+5. email/phone confirm
+
+How the update(backend will work):
+1. create customer
+2. enter card info(pay)
+3. if card info correct subscribe to selected subscriptions
+4. create appts
+5. email notification
+
+How the update(JWT will work):
+1. loggin/create create a blank jwt 
+	custerID,
+	subscriptionIDs,
+	spotID(aka appt)
+2. select subscription
+3. select appt
+========================================================================================================
+03/07/2020
+
+TODO:
+1. need to keep track if existing or not on client side (index.jsx)
+2. set up world pay
+    https://developer.worldpay.com/docs/wpg/hostedintegration/javascriptsdk
+    https://developer.worldpay.com/docs/wpg/clientsideencryption/javascript-integration
+    https://developer.worldpay.com/references/wpop/tokens/creating-a-token
+    https://stackoverflow.com/questions/51560337/worldpay-3d-secure-in-react-web-app
+3. iframe localstorage
+    https://levi.lol/iframe-localstorage-postmessage/
+
+    
+
